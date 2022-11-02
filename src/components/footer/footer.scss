@@ -1,0 +1,43 @@
+.footer {
+
+
+  &__title {
+    margin-bottom: 20px;
+    text-align: center;
+    color: $colorDarkAqua;
+  }
+
+  &__descr {
+    text-align: center;
+    font-size: 18px;
+    color: $colorBrown;
+  }
+
+  &__list {
+    padding: 28px;
+    padding-right: 0;
+  }
+
+  &__item {
+    color: $colorBrown;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+
+@media (max-width: 950px) {
+  .footer {
+    
+
+    &__title {
+      font-size: 22px;
+    }
+    
+    &__descr {
+      font-size: 18px;
+    }
+  }
+}

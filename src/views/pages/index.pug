@@ -1,0 +1,56 @@
+extends ../layouts/default
+
+block variables
+  - const catalog = [    {      title: 'Симиланы на спидботе',      premium: true,      recommendation: true,      guide: 'Русский гид',      days: 'Ежедневно',      priceAdult: 2700,      priceChild: 2400,      childAge: '4-10',      link: 'https://teletype.in/@elphuket/similan',   img: './assets/images/similan.jpg'    },    {      title: 'Симиланы на скоростном катамаране 1 этаж',      premium: true,      recommendation: true,      guide: 'Русский гид',      days: 'Ежедневно',      priceAdult: 2890,      priceChild: 2200,      childAge: '4-11',      link: 'https://teletype.in/@elphuket/similan',   img: './assets/images/similan.jpg'    },    {      title: 'Симиланы на скоростном катамаране 2 этажа',      premium: true,      recommendation: true,      guide: 'Русский гид',      days: 'Ежедневно',      priceAdult: 2990,      priceChild: 2300,      childAge: '4-11',      link: 'https://teletype.in/@elphuket/similan',   img: './assets/images/similan.jpg'    },    {      title: '4 Жемчужины Андамана / 11 Островов [Бонд + Краби + ночевка на Пхи Пхи]',      duration: '2 дня и 1 ночь',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'ВТ, ЧТ, СБ',      priceAdult: 5000,      priceChild: 4250,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/4pearl',      img: './assets/images/jamesBond.jpg'    },    {      title: '4 Жемчужины Андамана / 11 Островов [Бонд + Краби + Пхи Пхи]',      duration: '1 день',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'ВТ, ЧТ, СБ',      priceAdult: 4100,      priceChild: 3050,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/4pearl',      img: './assets/images/krabi.jpg'    },    {      title: 'Пхи Пхи + Бамбу + Майя Бэй на спидботе',      premium: true,      recommendation: true,      guide: 'Русский гид по запросу',      days: 'Ежедневно',      priceAdult: 2200,      priceChild: 1700,      childAge: '4-10',      link: 'https://teletype.in/@elphuket/phiphi',      img: './assets/images/mayaBay.jpg'    },    {      title: 'Пхи Пхи + Бамбу + Майя Бэй + Кхай + рыбалка на пол часа, на спидботе',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'СР, ПТ, ВС',      priceAdult: 2100,      priceChild: 1600,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/pp1rus',      img: './assets/images/khai.jpg'    },    {      title: 'Обзорная экскурсия без магазинов',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'ПН, СР, ПТ, СБ',      priceAdult: 800,      priceChild: 800,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/obzornaya',      img: './assets/images/phuket.jpg'    },    {      title: 'Национальный парк Каолак + псевдо зоопарк',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'Ежедневно кроме СР',      priceAdult: 1400,      priceChild: 1050,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/khaolak',      img: './assets/images/khaolak.jpg'    },    {      title: 'Удивительная Пханг Нга / Путь аватара',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'ПН, СР, ЧТ, СБ',      priceAdult: 1900,      priceChild: 1350,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/oho',      img: './assets/images/phangnga.jpg'    },    {      title: 'Рафтинг + катание на слонах (квадроциклы +500 бат)',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'ПН, ЧТ, СБ',      priceAdult: 1500,      priceChild: 1150,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/rafting',      img: './assets/images/rafting.jpg'    },    {      title: 'Озеро Чеолан',      duration: '1 день',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'СР, СБ',      priceAdult: 2200,      priceChild: 1650,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/cheowlan1d',      img: './assets/images/chaolan.jpg'    },    {      title: 'Озеро Чеолан Стандарт [PUTAWAN BUNGALOW]',      duration: '2 дня 1 ночь',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'По запросу',      priceAdult: 4400,      priceChild: 3950,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/cheowlan2',      img: './assets/images/chaolan.jpg'    },    {      title: 'Озеро Чеолан Стандарт [PUTAWAN CAPSULE]',      duration: '2 дня 1 ночь',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'По запросу',      priceAdult: 5500,      priceChild: 4350,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/cheowlan2',      img: './assets/images/chaolan.jpg'    },    {      title: 'Озеро Чеолан Стандарт [LAGUNA или PHUPAWAREE]',      duration: '2 дня 1 ночь',      premium: false,      recommendation: false,      guide: 'Русский гид',      days: 'По запросу',      priceAdult: 6000,      priceChild: 5350,      childAge: '4-9',      link: 'https://teletype.in/@elphuket/cheowlan',      img: './assets/images/chaolan.jpg'    },    {      title: 'Острова Бонда + острова Нака на спидботе',      premium: false,      recommendation: false,      guide: null,      days: 'Ежедневно',      priceAdult: 1850,      priceChild: 1400,      childAge: '4-10',      link: 'https://teletype.in/@elphuket/jb',      img: './assets/images/jamesBond.jpg'    }, {      title: 'Острова Бонда на большом корабле',      premium: false,      recommendation: false,      guide: null,      days: 'По запросу',      priceAdult: 1600,      priceChild: 1300,      childAge: '4-10',      link: 'https://teletype.in/@elphuket/jb',      img: './assets/images/jamesBond.jpg'    }, {      title: '3 в 1 Острова Рача + Корал + Закат у мыса Промтхеп на парусном катамаране ',      premium: false,      recommendation: false,      guide: null,      days: 'Ежедневно',      priceAdult: 1450,      priceChild: 1250,      childAge: '4-11',      link: 'https://teletype.in/@elphuket/3in1',      img: './assets/images/jamesBond.jpg'    }, {      title: 'Полет Ханумана Программа А+ (32 платформы + Рельса)',      premium: false,      recommendation: false,      guide: null,      days: 'Ежедневно',      priceAdult: 3100,      priceChild: null,      childAge: null,      link: '#',      img: './assets/images/hanuman.jpg'    }, {      title: 'Полет Ханумана Программа А+ (32 платформы + Рельса)',      premium: false,      recommendation: false,      guide: null,      days: 'Ежедневно',      priceAdult: 2700,      priceChild: null,      childAge: null,      link: 'https://teletype.in/@elphuket/hanuman',      img: './assets/images/hanuman.jpg'    }, {      title: 'Полет Ханумана Программа А+ (32 платформы + Рельса)',      premium: false,      recommendation: false,      guide: null,      days: 'Ежедневно',      priceAdult: 2400,      priceChild: null,      childAge: null,      link: 'https://teletype.in/@elphuket/hanuman',      img: './assets/images/hanuman.jpg'    }, {      title: 'Шоу Трансвеститов Simon Cabaret (Стандартные места)',      premium: false,      recommendation: false,      guide: null,      days: 'По запросу',      priceAdult: 800,      priceChild: 600,      childAge: '91 - 140 см',      link: '#',      img: './assets/images/cabaret.jpg'    }, {      title: 'Шоу Трансвеститов Simon Cabaret (ВИП места)',      premium: false,      recommendation: false,      guide: null,      days: 'По запросу',      priceAdult: 1000,      priceChild: 800,      childAge: '91 - 140 см',      link: '#',      img: './assets/images/cabaret.jpg'    }, {      title: 'Паром Пхукет - Пхи Пхи в одну сторону',      premium: false,      recommendation: false,      guide: null,      days: 'Ежедневно',      priceAdult: 1000,      priceChild: 800,      childAge: '91 - 140 см',      link: '#',      img: './assets/images/phiphi.jpg'    }, {      title: 'Паром Пхукет - Пхи Пхи в обе стороны (с открытой датой)',      premium: false,      recommendation: false,      guide: null,      days: 'Ежедневно',      priceAdult: 1150,      priceChild: 1000,      childAge: '4 - 11 лет',      link: '#',      img: './assets/images/phiphi.jpg'    }, {      title: 'Спидбот Пхукет - Пхи Пхи в обе сторону',      premium: false,      recommendation: false,      guide: null,      days: 'Ежедневно',      priceAdult: 850,      priceChild: 650,      childAge: '91 - 140 см',      link: '#',      img: './assets/images/phiphi.jpg'    }, {      title: 'Спидбот Пхукет - Пхи Пхи в обе сторону (с открытой датой)',      premium: false,      recommendation: false,      guide: null,      days: 'Ежедневно',      priceAdult: 1400,      priceChild: 1100,      childAge: '4 - 11 лет',      link: '#',      img: './assets/images/phiphi.jpg'    }, ]
+  - const title = 'Реальный Пхукет - Экскурсии'
+
+block content
+  .container.animate__animated.animate__fadeIn.animate__delay-2s.animate__slow
+    section.contacts
+      .contacts__number 
+        p.contacts__default-text Лицензия TAT 34/02295
+        p.contacts__default-text Телефон для бронирования:
+        .contacts__icon-box 
+          a(href="https://wa.me/+66871011842" target="_blank") 
+            svg.contacts__icon
+              use(xlink:href='./assets/images/sprite.svg#whatsapp')    
+          a(href="https://t.me/+66871011842" target="_blank")       
+            svg.contacts__icon
+              use(xlink:href='./assets/images/sprite.svg#telegram')
+          div
+            a(href="tel:+66871011842").contacts__tel +66 87 101 1842
+      .contacts__info 
+        p.contacts__info-text Все цены указаны в тайских батах
+        p.contacts__info-text Цены действительны с 15/10/2022 до 30/10/2022, но уточняйте наличие дат ввиду текущей ситуации
+    section.main 
+      h2.main__title Только качественные и популярные экскурсии
+      ul.main__list 
+        each tour in catalog 
+          li.main__item 
+            a(href=tour.link target="_blank").main__item-link 
+              .main__img-wrapper 
+                img(src=tour.img, alt="Tour img").main__item-img
+                if tour.premium
+                  .main__premium-container
+                    svg.main__icon 
+                      use(xlink:href='./assets/images/sprite.svg#premium')
+                    p.main__premium Премиум
+                if tour.recommendation
+                  .main__recommendation-container
+                    svg.main__icon 
+                      use(xlink:href='./assets/images/sprite.svg#like')
+                    p.main__recommendation Рекомендую!
+              .content-wrapper
+                h3.main__tour-title= tour.title
+                if tour.duration
+                  p.main__duration Продолжительность: #{tour.duration}                
+                if tour.days
+                  p.main__days Возможныые дни: #{tour.days}
+                if tour.guide
+                  p.main__guide= tour.guide
+                if tour.childAge
+                  p.main__childAge Возраст ребенка: #{tour.childAge}
+                p.main__priceAdult Цена для взрослого - #{tour.priceAdult}
+                if tour.priceChild
+                  p.main__priceChild Цена для ребенка - #{tour.priceChild}
+
