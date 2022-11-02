@@ -251,6 +251,10 @@ button {
     &__list {
       grid-template-columns: 1fr;
     }
+
+    .content-wrapper {
+      height: unset;
+    }
   }
   
   .contacts{
